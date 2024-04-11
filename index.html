@@ -83,7 +83,7 @@
         // We will also add lines of code around this airbnb_listings object as we adjust the style of the symbols
         //Make sure and change your authorname in the attribute information
 
-        cltelementaryschools = L.geoJson.ajax("assets/cltelementaryschools.geojson",{
+        cltelementaryschools = L.geoJson.ajax("cltelementaryschools.geojson",{
             // assign a function to the onEachFeature parameter of the boatings object.
   // Then each (point) feature will have a popup window.
 
@@ -102,7 +102,7 @@
         }).addTo(mymap);
 
     //income block layer 
-    L.geoJson.ajax("assets/Census_Household_Income_Block_Groups.geojson").addTo(mymap);
+    L.geoJson.ajax("Census_Household_Income_Block_Groups.geojson").addTo(mymap);
 
     //6 function for color ramp 
     colors = chroma.sclae('Purples').colors(6);
